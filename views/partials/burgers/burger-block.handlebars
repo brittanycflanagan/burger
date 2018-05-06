@@ -2,8 +2,8 @@
 	{{burger}}
 
 	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		{{#if devoured}}DEVOUR IT!{{else}}Re-make Burger{{/if}}
-	</button>
+		{{#if devoured}}<b>DEVOUR IT!</b>{{else}}Remake Burger
+	</button><button class="delete-burger" data-id="{{this.id}}">Throw Away Trash</button>{{/if}}
 
-	<button class="delete-burger" data-id="{{this.id}}">Throw Away</button>
+	 <!--Added option to Remake Burger & to delete burger from database -->
 </li>

@@ -1,25 +1,31 @@
+<center>
 <h1>Eat-Da-Burger!</h1>
-
-<h2>Not Eaten</h2
-
-<ul>
+<img src="/assets/img/burger.png" alt="burger-icon" id="burger-icon"> 
+<table width="80%" border="1">
+  <tbody>
+    <tr>
+      <td><h2>Not Eaten</h2></td>
+      <td><h2>Eaten</h2></td>
+    </tr>
+    <tr>
+      <td><ol>
   {{#each burgers}}
     {{#unless devoured}}
       {{> burgers/burger-block devoured=true}}
     {{/unless}}
   {{/each}}
-</ul>
-
-<h2>Eaten</h2>
-
-<ul>
+</ol></td>
+      <td><ol>
   {{#each burgers}}
     {{#if devoured}}
       {{> burgers/burger-block devoured=false}}
     {{/if}}
   {{/each}}
-</ul>
-
+</ol></td>
+    </tr>
+  </tbody>
+</table>
+<br/><br/>
 <h2>Add a Burger</h2>
 <form class="create-form">
 
@@ -33,6 +39,8 @@
     <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
     <input type="radio" name="sleepy" value="0"> Awake
   </div> --}}
-
+<br/>
   <button type="submit">Add Burger</button>
 </form>
+<p>Enter a burger you would like to eat, then click the "Add Burger" button</p>
+</center>

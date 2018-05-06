@@ -1,3 +1,47 @@
 body {
-    background-color: #F9A602;
+    background-color: #ffb82e;
+     font-family: 'Courier New', Courier, monospace;
+    font-size:18px;
+   
+}
+ul {
+    line-height: 2.1;
+}
+
+#burger-icon {
+    width: 350px;
+}
+
+
+
+tr {
+ 
+    vertical-align: top;
+}
+
+button {
+    padding:5px;
+    margin:5px;
+}
+
+h2 {
+    line-height: .5;
+    text-align: center;
+}
+
+button {
+    background-color: #b20000;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 7px;
+    color:white;
+    text-align: center;
+
+}
+
+p {
+    font-style: italic;
+    font-size: 13px;
+
 }
